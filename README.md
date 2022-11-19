@@ -1,4 +1,4 @@
-# Frontend Mentor - Sunnyside landing page
+# Frontend Mentor Challenge - Sunnyside landing page
 Responsive Front End Website using HTML, CSS, ReactJS
 
 Result: https://glittery-dango-844529.netlify.app/
