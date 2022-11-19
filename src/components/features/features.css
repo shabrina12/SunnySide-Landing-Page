@@ -1,0 +1,117 @@
+.section_1, .section_2, .section_3{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+  }
+  .section_1_left, 
+  .section_2_right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .section_1_right img, .section_2_left img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /*biar img nya mentok full sak div nya*/
+  }
+  .text-container{
+    width: 60%;
+  }
+  .text-container h1, .section_3 h1 {
+    font-size: 40px;
+    font-family: var(--font-base);
+    margin-bottom: 16px;
+  }
+  .text-container p {
+    opacity: 0.6;
+    line-height: 1.8;
+    font-family: var(--font-family);
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+  .text-container img { /*img learn more*/
+    width: 150px;
+    cursor: pointer;
+  }
+  .section_1_left, .section_1_right, 
+  .section_2_left, .section_2_right, 
+  .section_3_left, .section_3_right{
+    flex: 1; /*biar kanan kiri sama rata 50%*/
+  }
+
+  /*----------------------------- SECTION 3 --------------------------*/
+  .section_3_left {
+    background-image: url("../../images/desktop/image-graphic-design.jpg");
+    background-position: center top;
+    background-size: cover;
+    }
+  .section_3_right {
+    background-image: url("../../images//desktop/image-photography.jpg");
+    background-position: center top;
+    background-size: cover; 
+    }
+  .section_3_left_text-container, .section_3_right_text-container { /*Text inside section 3*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 70vh;
+    padding-bottom: 40px;
+  }
+  .section_3_left_text-container {
+    color: var(--color-dark-cyan);
+  }
+  .section_3_right_text-container {
+    color: var(--color-dark-blue);
+  }
+  .section_3 p{
+    font-family: var(--font-family);
+    text-align: center;
+    line-height: 1.5;
+    width: 45%;
+  }
+
+
+  @media screen and (max-width: 1200px) {
+    .text-container h1, .section_3 h1 {
+        font-size: 30px;
+    }
+    .text-container{
+        margin: 4rem 0;
+        width: 80%;
+    }
+    .section_3 p{
+        font-size: 18px;
+        width: 70%;
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+    .section_1 {
+        flex-direction: column-reverse;
+    }
+    .section_2, .section_3{
+        flex-direction: column;
+    }
+    .text-container{
+        text-align: center;
+    }
+    .text-container p, .section_3 p {
+        font-size: 20px;
+    }
+    .section_3 p{
+        width: 60%;
+    }
+  }
+
+  @media screen and (max-width: 425px) {
+    .text-container p {
+        line-height: 1.5;
+    }
+    .text-container h1, .section_3 h1 {
+        font-size: 25px;
+    }
+    .text-container p, .section_3 p{
+        font-size: 16px;
+    }
+  }

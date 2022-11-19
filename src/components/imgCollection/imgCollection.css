@@ -1,0 +1,22 @@
+.collection {
+    display: flex;
+    margin-top: 6rem;
+}
+
+/* .collection-img-container {
+    flex: 0.25;
+} */
+.collection-img-container img {
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 690px) {
+    .collection {
+        flex-wrap: wrap;
+    }
+    .collection-img-container {
+        /* flex: 0.5; */
+        flex-basis: 50%;
+    }
+}
