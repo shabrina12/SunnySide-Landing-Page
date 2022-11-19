@@ -22,6 +22,7 @@ const Footer = () => {
         <img src={twitter} alt="twitter" />
         <img src={pinterest} alt="pinteres" />
       </div>
+      <p className='copyright'>Coded by Shabrina Putri.</p>
     </div>
   )
 }
