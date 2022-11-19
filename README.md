@@ -3,4 +3,4 @@ Responsive Front End Website using HTML, CSS, ReactJS
 
 Result: https://benevolent-basbousa-4aabc8.netlify.app/
 
-![Design preview for the Insure landing page coding challenge](./design/desktop-preview.jpg)
+![Design preview for the Insure landing page coding challenge](./src/design/desktop-preview.jpg)
